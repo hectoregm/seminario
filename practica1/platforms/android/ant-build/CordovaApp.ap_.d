@@ -35,7 +35,13 @@
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/img \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/index.html \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap-theme.css \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap-theme.css.map \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap.css \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap.css.map \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/index.css \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/img/logo.png \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js/index.js \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js/vendor \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js/vendor/bootstrap.min.js \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/ant-build/AndroidManifest.xml \
