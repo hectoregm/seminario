@@ -2,3 +2,13 @@ body {
   padding-top: 70px;
   padding-bottom: 30px;
 }
+
+.list-group a {
+  position: relative;
+}
+
+.list-group a span {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+}
