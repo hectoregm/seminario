@@ -3,12 +3,23 @@ body {
   padding-bottom: 30px;
 }
 
-.list-group a {
-  position: relative;
+.navbar-toggle {
+    float: left;
+    margin-right: 0px;
+    margin-left: 15px;
 }
 
-.list-group a span {
+.page-header {
+  margin-top: 0px;
+}
+
+.list-group a.list-group-item {
+  position: relative;
+  padding: 20px 15px 18px 15px;
+}
+
+.list-group a.list-group-item span {
   position: absolute;
   right: 10px;
-  top: 13px;
+  top: 23px;
 }
