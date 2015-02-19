@@ -29,6 +29,7 @@
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/ant-build/res/drawable-xhdpi/icon.png \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/_where-is-www.txt \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/contacto.html \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/cordova.js \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/cordova_plugins.js \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/create_band.html \
@@ -37,6 +38,7 @@
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/img \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/index.html \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/materiales.html \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/plugins \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap-theme.css \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap-theme.css.map \
