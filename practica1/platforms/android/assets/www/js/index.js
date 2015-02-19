@@ -44,7 +44,7 @@ var app = {
 		$(this).hide();
 	    });
 	    
-	    $('input').on("change keydown paste input", function() {
+	    $('input, textarea').on("change keydown paste input", function() {
 		console.log($(this).val())
 		if ($(this).val() == "") {
 		    console.log($(this).next())
