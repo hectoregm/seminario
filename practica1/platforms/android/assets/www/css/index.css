@@ -1,12 +1,7 @@
-body {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-
 .navbar-toggle {
-    float: left;
-    margin-right: 0px;
-    margin-left: 15px;
+  float: left;
+  margin-right: 0px;
+  margin-left: 15px;
 }
 
 .page-header {
@@ -22,4 +17,26 @@ body {
   position: absolute;
   right: 10px;
   top: 23px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  right: 20px;
+}
+
+.form-group input.form-control {
+  padding: 0px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group span.delete {
+  position: absolute;
+  display: none;
+  top: 12px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }

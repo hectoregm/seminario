@@ -37,14 +37,23 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        // var parentElement = document.getElementById(id);
-        // var listeningElement = parentElement.querySelector('.listening');
-        // var receivedElement = parentElement.querySelector('.received');
-
-        // listeningElement.setAttribute('style', 'display:none;');
-        // receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+	$(document).ready(function() {
+	    $('.delete').on("click", function() {
+		console.log("click")
+		$(this).prev().val('').focus();
+		$(this).hide();
+	    });
+	    
+	    $('input').on("change keydown paste input", function() {
+		console.log($(this).val())
+		if ($(this).val() == "") {
+		    console.log($(this).next())
+		    $(this).next().hide();
+		} else {
+		    $(this).next().show();
+		}
+	    });
+	});
     }
 };
 
