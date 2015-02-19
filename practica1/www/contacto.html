@@ -29,25 +29,24 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
 	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
-        <title>BandApp</title>
+        <title>Ciudad Joven</title>
     </head>
     <body>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-default">
 	<div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+	    <a href="index.html">
+	      <button type="button" class="navbar-toggle">
+              <span>Back</span>
             </button>
+	    </a>
             <a class="navbar-brand" href="index.html">Ciudad Joven</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="#about">Perfil</a></li>
+              <li><a href="#">Perfil</a></li>
             </ul>
           </div><!--/.nav-collapse -->
 	</div>
@@ -55,29 +54,33 @@
 
       <div class="container">
 	<div class="page-header">
-          <h3>Crear Perfil</h3>
+          <h3>Contacto</h3>
 	</div>
 
 	<div class="row">
 	  <div class="col-xs-12">
-            <div class="list-group">
-              <a href="create_band.html" class="list-group-item">
-		<h4 class="list-group-item-heading">Información de la banda</h4>
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              </a>
-              <a href="materiales.html" class="list-group-item">
-		<h4 class="list-group-item-heading">Materiales</h4>
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              </a>
-              <a href="contacto.html" class="list-group-item">
-		<h4 class="list-group-item-heading">Contacto</h4>
-		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              </a>
-            </div>
+	    <form action="index.html" class="form-inline">
+	      <div class="form-group">
+		<label class="sr-only">Nombre</label>
+		<input type="text" class="form-control" placeholder="Nombre de la Banda">
+		<span class="delete glyphicon glyphicon-remove-circle"></span>
+	      </div>
+	      <div class="form-group">
+		<label class="sr-only">Genero</label>
+		<input type="text" class="form-control" placeholder="Genero de la Banda">
+		<span class="delete glyphicon glyphicon-remove-circle"></span>
+	      </div>
+	      <div class="form-group">
+		<label class="sr-only">Integrantes</label>
+		<textarea type="search" class="form-control" rows="3" placeholder="Integrantes de la banda"></textarea>
+		<span class="delete glyphicon glyphicon-remove-circle"></span>
+	      </div>
+	      <button type="submit" class="btn btn-default">Finalizar</button>
+	    </form>
 	  </div>
 	</div>
       </div>
       <script type="text/javascript" src="cordova.js"></script>
-      <script type="text/javascript" src="js/index.js"></script>
+      <Script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
