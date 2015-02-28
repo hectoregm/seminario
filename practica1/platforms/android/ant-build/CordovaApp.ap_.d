@@ -35,6 +35,7 @@
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/create_band.html \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/fonts \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/images \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/img \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/index.html \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js \
@@ -44,12 +45,13 @@
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap-theme.css.map \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap.css \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/bootstrap.css.map \
-/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/index.css \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/css/main.css \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/fonts/glyphicons-halflings-regular.eot \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/fonts/glyphicons-halflings-regular.svg \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff2 \
+/Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/images/people.jpg \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/img/logo.png \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js/index.js \
 /Users/hectoregm/Projects/seminario/practica1/platforms/android/assets/www/js/vendor \

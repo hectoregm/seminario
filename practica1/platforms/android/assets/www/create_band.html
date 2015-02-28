@@ -26,7 +26,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap-theme.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
     <title>Ciudad Joven</title>
@@ -37,7 +37,8 @@
       <div class="container">
         <div class="navbar-header">
           <a href="index.html">
-            <button type="button" class="navbar-toggle">
+            <button type="button" class="navbar-toggle back-button">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
               <span>Back</span>
             </button>
           </a>
@@ -77,17 +78,17 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-md-12">
-            <div class="form-group">
+            <div class="form-group textarea">
               <label class="sr-only">Integrantes</label>
-              <textarea type="search" class="form-control" rows="3" placeholder="Integrantes"></textarea>
+              <textarea type="text" class="form-control" rows="3" placeholder="Integrantes"></textarea>
               <span class="delete glyphicon glyphicon-remove-circle"></span>
             </div>
           </div>
 
           <div class="col-xs-12 col-md-12">
-            <div class="form-group">
+            <div class="form-group textarea">
               <label class="sr-only">Biografia</label>
-              <textarea type="search" class="form-control" rows="3" placeholder="Biografia"></textarea>
+              <textarea type="text" class="form-control" rows="3" placeholder="Biografia"></textarea>
               <span class="delete glyphicon glyphicon-remove-circle"></span>
             </div>
             <button type="submit" class="btn btn-default">Finalizar</button>
