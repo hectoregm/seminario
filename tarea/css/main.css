@@ -1,0 +1,109 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: -webkit-linear-gradient(top, rgba(255,155,43,1) 0%,rgba(209,105,29,1) 55%,rgba(179,72,21,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: linear-gradient(to bottom, rgba(255,155,43,1) 0%,rgba(209,105,29,1) 55%,rgba(179,72,21,1) 100%); /* W3C */
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+a, a:hover, a:focus {
+  color: #B54209;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-default {
+  background: #fff;
+}
+
+.navbar-default .navbar-brand {
+  color: #B54209;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #B54209;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #B54209;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #B54209;
+}
+
+.page-header {
+  margin-top: 0px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1px solid #B44915;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #B54209;
+  font-size: 12px;
+  float: left;
+  margin-right: 0px;
+  margin-left: 15px;
+}
+
+.navbar-default .back-button {
+  padding: 9px 12px 8px 8px;
+}
+
+.list-group a.list-group-item {
+  position: relative;
+  padding: 20px 15px 18px 15px;
+  background-color: #B44915;
+  color: #ffffff;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+.list-group a.list-group-item h4 {
+  color: #ffffff;
+}
+
+.list-group a.list-group-item span {
+  position: absolute;
+  right: 10px;
+  top: 23px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group span.delete {
+  position: absolute;
+  display: none;
+  top: 13px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  color: #B54209;
+  font-size: 18px;
+}
+
+.textarea span.delete {
+  top: 10px;
+}
+
+.form-control {
+  height: 44px;
+  padding: 6px 30px 6px 12px;
+}
+
+@media (min-width: 400px) {
+  .img-responsive {
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,17 @@
+Se hizo de Boostrap para hacer un reset de los estilos
+por default y para hacer uso de su grid por columnas.
+
+Primero se uso de gradientes en CSS3 para poner el
+fondo con una gradiente parecido al de la imagen de prueba.
+
+Para poner el tache para realizar el borrado del texto ingresado
+se hizo uso de posicionamiento relativo en el div padre y
+de posicionamiento absoluto en el hijo para asi posicionar
+el tache con respecto al campo y no a toda la pagina.
+
+Asi se hizo su posicionamiento con respecto al campo dando
+valores a top y right de tal forma que este el boton para borrar
+siempre en la esquina superior derecha de los campos de texto.
+
+Tambien se hizo de media queries para dar un padding a la imagen
+en ciertas dimensiones.
