@@ -1,9 +1,34 @@
-// Ionic Starter App
+var places = [
+    { title: 'Pata Negra',
+      address: 'Tamaulipas 30, Juan Escutia, Condesa, 06140',
+      grade: '8',
+      id: 0 },
+    { title: 'Cantina Bar Montejo',
+      address: 'Benjamín Franklin 261-A, Condesa',
+      grade: '9',
+      id: 1 },
+    { title: 'Caradura',
+      address: 'Nuevo León 73, Condesa, 06140',
+      grade: '10',
+      id: 2 },
+    { title: 'El Ocho',
+      address: 'México 111, Condesa, 06100',
+      grade: '8',
+      id: 3 },
+    { title: 'La Bonita',
+      address: 'Tamaulipas 104, Condesa',
+      grade: '7',
+      id: 4 },
+    { title: 'Woko Taberna',
+      address: 'Nuevo León 139-B, Condesa',
+      grade: '8',
+      id: 5 },
+    { title: 'Cluny',
+      address: 'Avenida de la Paz, Coyoacan',
+      grade: '10',
+      id: 6 },
+];
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers'])
 
     .run(function($ionicPlatform) {

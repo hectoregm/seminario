@@ -45,39 +45,18 @@ angular.module('starter.controllers', [])
 
     .controller('BarsCtrl', function($scope) {
         $scope.title = "Bares"
-        $scope.places = [
-            { title: 'Pata Negra',
-              address: 'Tamaulipas 30, Juan Escutia, Condesa, 06140',
-              grade: '8',
-              id: 1 },
-            { title: 'Cantina Bar Montejo',
-              address: 'Benjamín Franklin 261-A, Condesa',
-              grade: '9',
-              id: 2 },
-            { title: 'Caradura',
-              address: 'Nuevo León 73, Condesa, 06140',
-              grade: '10',
-              id: 3 },
-            { title: 'El Ocho',
-              address: 'México 111, Condesa, 06100',
-              grade: '8',
-              id: 4 },
-            { title: 'La Bonita',
-              address: 'Tamaulipas 104, Condesa',
-              grade: '7',
-              id: 5 },
-            { title: 'Woko Taberna',
-              address: 'Nuevo León 139-B, Condesa',
-              grade: '8',
-              id: 6 }
-        ];
+        $scope.places = [places[0],
+                         places[1],
+                         places[2],
+                         places[3],
+                         places[4],
+                         places[5]
+                        ];
     })
 
     .controller('RestaurantsCtrl', function($scope) {
         $scope.title = "Restaurantes"
-        $scope.places = [
-            { title: 'Cluny', id: 1 },
-        ];
+        $scope.places = [places[6]];
     })
 
     .controller('PlaceCtrl', function($scope, $stateParams) {
