@@ -1,8 +1,10 @@
 <ion-view view-title="{{title}}">
   <ion-content>
-    <ion-list>
+    <ion-list class="places">
       <ion-item ng-repeat="place in places" href="#/app/places/{{place.id}}">
         {{place.title}}
+        <p>{{place.address}}</p>
+        <span class="badge badge-energized">{{place.grade}}</span>
       </ion-item>
     </ion-list>
   </ion-content>
