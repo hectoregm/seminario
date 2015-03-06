@@ -1,5 +1,68 @@
-<ion-view view-title="Place">
+<ion-view view-title="">
   <ion-content>
-    <h1>Place</h1>
+    <div class="card">
+      <a href="#" class="item item-divider">
+        {{place.name}}
+      </a>
+      <a href="#" class="item item-text-wrap">
+        Un gran bar con un gran ambiente,
+        excelente seleccion de cervezas
+      </a>
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-home"></i>
+        {{place.address}}
+      </a>
+      <a href="#" class="item item-image">
+        <img src="img/location.jpg">
+      </a>
+
+      <a href="#" class="item item-icon-left">
+        <i class="icon ion-star"></i>
+        {{place.grade}}
+      </a>
+    </div>
+
+    <div class="list">
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Calificar:
+        </div>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option selected>10</option>
+        </select>
+      </label>
+
+    </div>
+
+    <label class="item item-input">
+      <textarea placeholder="Pon un comentario sobre este lugar" class="no-resize"></textarea>
+    </label>
+
+    <button class="button button-block button-positive">
+      Agregar Comentario
+    </button>
+
+    <ion-list>
+      <div class="item item-divider">
+        Comentarios
+      </div>
+      <ion-item ng-repeat="comment in comments track by $index">
+        {{comment.username}}
+        <p>{{comment.text}}</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll ng-if="haveMoreData" on-infinite="loadMore()">
+    </ion-infite-scroll>
   </ion-content>
 </ion-view>

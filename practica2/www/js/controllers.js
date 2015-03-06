@@ -61,5 +61,16 @@ angular.module('starter.controllers', [])
         $scope.haveMoreData = false;
     })
 
-    .controller('PlaceCtrl', function($scope, $stateParams) {
+    .controller('PlaceCtrl', function($scope, $stateParams, $timeout) {
+        $scope.place = places[$stateParams.placeId]
+        $scope.comments = comments.slice(0,6)
+        $scope.haveMoreData = true;
+
+        $scope.loadMore = function() {
+            console.log("In loadMore")
+            $timeout(function () {
+                $scope.comments = $scope.comments.concat(comments.slice(0,6));
+                $scope.$broadcast('scroll.infiniteScrollComplete');
+            }, 2000);
+        };
     });

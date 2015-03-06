@@ -2,7 +2,7 @@
   <ion-content>
     <ion-list class="places">
       <ion-item ng-repeat="place in places track by $index" href="#/app/places/{{place.id}}">
-        {{place.title}}
+        {{place.name}}
         <p>{{place.address}}</p>
         <span class="badge badge-energized">{{place.grade}}</span>
       </ion-item>
