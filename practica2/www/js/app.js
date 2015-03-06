@@ -23,10 +23,35 @@ var places = [
       address: 'Nuevo León 139-B, Condesa',
       grade: '8',
       id: 5 },
+    { title: 'Leonor',
+      address: 'Nuevo León 163, Condesa, 06140',
+      grade: '9',
+      id: 6
+    },
+    { title: 'Wallace Whisky Bar',
+      address: 'Tamaulipas 45, Condesa, 06140',
+      grade: '9',
+      id: 7
+    },
+    { title: 'Felina',
+      address: 'Ometusco 87, Eje 3 Sur, Condesa, 06100',
+      grade: '8',
+      id: 8
+    },
+    { title: 'El Botellón',
+      address: 'Tamaulipas 106, Condesa, 06100',
+      grade: '7',
+      id: 9
+    },
+    { title: 'King\'s Pub Condesa',
+      address: 'Nuevo León 92, Condesa',
+      grade: '7',
+      id: 10
+    },
     { title: 'Cluny',
       address: 'Avenida de la Paz, Coyoacan',
       grade: '10',
-      id: 6 },
+      id: 11 },
 ];
 
 angular.module('starter', ['ionic', 'starter.controllers'])

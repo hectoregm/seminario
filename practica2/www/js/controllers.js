@@ -43,20 +43,22 @@ angular.module('starter.controllers', [])
         ];
     })
 
-    .controller('BarsCtrl', function($scope) {
-        $scope.title = "Bares"
-        $scope.places = [places[0],
-                         places[1],
-                         places[2],
-                         places[3],
-                         places[4],
-                         places[5]
-                        ];
+    .controller('BarsCtrl', function($scope, $timeout) {
+        $scope.title = "Bares";
+        $scope.places = places.slice(0,11);
+        $scope.haveMoreData = true;
+        $scope.loadMore = function() {
+            $timeout(function () {
+                $scope.places = $scope.places.concat(places.slice(0,11));
+                $scope.$broadcast('scroll.infiniteScrollComplete');
+            }, 2000);
+        };
     })
 
     .controller('RestaurantsCtrl', function($scope) {
         $scope.title = "Restaurantes"
-        $scope.places = [places[6]];
+        $scope.places = places.slice(6,7);
+        $scope.haveMoreData = false;
     })
 
     .controller('PlaceCtrl', function($scope, $stateParams) {
