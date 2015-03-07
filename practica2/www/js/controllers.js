@@ -57,7 +57,25 @@ angular.module('starter.controllers', [])
 
     .controller('RestaurantsCtrl', function($scope) {
         $scope.title = "Restaurantes"
-        $scope.places = places.slice(6,7);
+        $scope.places = places.slice(11,15);
+        $scope.haveMoreData = false;
+    })
+
+    .controller('MuseumsCtrl', function($scope) {
+        $scope.title = "Museos"
+        $scope.places = places.slice(15,16);
+        $scope.haveMoreData = false;
+    })
+
+    .controller('TheatersCtrl', function($scope) {
+        $scope.title = "Teatros"
+        $scope.places = places.slice(16,17);
+        $scope.haveMoreData = false;
+    })
+
+    .controller('CinemasCtrl', function($scope) {
+        $scope.title = "Cines"
+        $scope.places = places.slice(17,18);
         $scope.haveMoreData = false;
     })
 
