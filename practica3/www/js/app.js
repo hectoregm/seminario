@@ -39,6 +39,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       })
 
+      .state('app.video', {
+        url: "/video",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/video.html",
+            controller: 'VideoCtrl'
+          }
+        }
+      })
+
       .state('app.search', {
         url: "/search",
         views: {

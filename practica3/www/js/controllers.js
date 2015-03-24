@@ -33,6 +33,21 @@ angular.module('starter.controllers', [])
     };
   })
 
+  .controller('VideoCtrl', function($scope) {
+    if (typeof cordova != 'undefined') {
+      var so = cordova.plugins.screenorientation;
+
+      $scope.$on("$ionicView.enter", function() {
+        so.setOrientation('landscape')
+      });
+
+      $scope.$on("$ionicView.leave", function() {
+        so.setOrientation('portrait')
+      });
+    }
+
+  })
+
   .controller('PlaylistsCtrl', function($scope) {
     $scope.playlists = [
       { title: 'Reggae', id: 1 },
