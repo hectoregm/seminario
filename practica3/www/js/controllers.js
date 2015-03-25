@@ -33,6 +33,9 @@ angular.module('starter.controllers', [])
     };
   })
 
+  .controller('HelpCtrl', function($scope) {
+  })
+
   .controller('VideoCtrl', function($scope) {
     if (typeof cordova != 'undefined') {
       var so = cordova.plugins.screenorientation;
@@ -45,7 +48,6 @@ angular.module('starter.controllers', [])
         so.setOrientation('portrait')
       });
     }
-
   })
 
   .controller('PlaylistsCtrl', function($scope) {
