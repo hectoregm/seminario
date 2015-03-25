@@ -1,3 +1,16 @@
+var faqItems = [
+  { question: "¿Como añadir un evento?",
+    id: 0 },
+  { question: "¿Como recibir una alerta sobre un evento?",
+    id: 1 },
+  { question: "¿Como buscar un evento?",
+    id: 2 },
+  { question: "¿Como añadir un comentario?",
+    id: 3 },
+  { question: "¿Como mandar una reseña?",
+    id: 4 }
+]
+
 angular.module('starter', ['ionic', 'starter.controllers'])
 
   .run(function($ionicPlatform) {
@@ -33,12 +46,22 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       })
 
-      .state('app.landing-help', {
-        url: "/landing/help",
+      .state('app.faq', {
+        url: "/landing/faq",
         views: {
           'menuContent': {
-            templateUrl: "templates/help.html",
-            controller: 'HelpCtrl'
+            templateUrl: "templates/faq.html",
+            controller: 'FAQCtrl'
+          }
+        }
+      })
+
+      .state('app.faqvideo', {
+        url: "/faq/video/:videoId",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/video.html",
+            controller: 'VideoCtrl'
           }
         }
       })

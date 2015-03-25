@@ -33,7 +33,8 @@ angular.module('starter.controllers', [])
     };
   })
 
-  .controller('HelpCtrl', function($scope) {
+  .controller('FAQCtrl', function($scope) {
+    $scope.faqs = faqItems;
   })
 
   .controller('VideoCtrl', function($scope) {
