@@ -33,6 +33,31 @@ angular.module('starter.controllers', [])
     };
   })
 
+  .controller('CategoriesCtrl', function($scope) {
+    $scope.categories = [
+      { title: 'Bares', id: 1, path: 'bars' },
+      { title: 'Restaurantes', id: 2, path: 'restaurants' },
+    ];
+  })
+
+  .controller('BarsCtrl', function($scope, $timeout) {
+    $scope.title = "Bares";
+    $scope.places = places.slice(0,11);
+    $scope.haveMoreData = true;
+    $scope.loadMore = function() {
+      $timeout(function () {
+        $scope.places = $scope.places.concat(places.slice(0,11));
+        $scope.$broadcast('scroll.infiniteScrollComplete');
+      }, 2000);
+    };
+  })
+
+  .controller('RestaurantsCtrl', function($scope) {
+    $scope.title = "Restaurantes"
+    $scope.places = places.slice(11,15);
+    $scope.haveMoreData = false;
+  })
+
   .controller('FAQCtrl', function($scope) {
     $scope.faqs = faqItems;
   })
@@ -122,16 +147,16 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('PlaylistsCtrl', function($scope) {
-    $scope.playlists = [
-      { title: 'Reggae', id: 1 },
-      { title: 'Chill', id: 2 },
-      { title: 'Dubstep', id: 3 },
-      { title: 'Indie', id: 4 },
-      { title: 'Rap', id: 5 },
-      { title: 'Cowbell', id: 6 }
-    ];
-  })
+  .controller('PlaceCtrl', function($scope, $stateParams, $timeout) {
+    $scope.place = places[$stateParams.placeId]
+    $scope.comments = comments.slice(0,6)
+    $scope.haveMoreData = true;
 
-  .controller('PlaylistCtrl', function($scope, $stateParams) {
+    $scope.loadMore = function() {
+      console.log("In loadMore")
+      $timeout(function () {
+        $scope.comments = $scope.comments.concat(comments.slice(0,6));
+        $scope.$broadcast('scroll.infiniteScrollComplete');
+      }, 2000);
+    };
   });

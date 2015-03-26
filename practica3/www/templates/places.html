@@ -1,0 +1,14 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <ion-list class="places">
+      <ion-item ng-repeat="place in places track by $index" href="#/app/places/{{place.id}}">
+        {{place.name}}
+        <p>{{place.address}}</p>
+        <span class="badge badge-energized">{{place.grade}}</span>
+      </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll ng-if="haveMoreData" on-infinite="loadMore()">
+    </ion-infite-scroll>
+  </ion-content>
+</ion-view>
