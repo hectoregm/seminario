@@ -1,7 +1,7 @@
 <ion-view view-title="{{title}}">
   <ion-content on-touch="onTouch()">
     <div id="video-container">
-      <video id="video" width="568" height="285">
+      <video id="video" width="568" height="265">
         <source src="videos/mikethefrog.mp4" type="video/mp4">
           <p>
             Your browser doesn't support HTML5 video.
@@ -11,9 +11,6 @@
       <div id="video-controls" ng-class="{'active': active}">
         <button type="button" id="play-pause" class="play">Play</button>
         <input type="range" id="seek-bar" value="0">
-        <button type="button" id="mute">Mute</button>
-        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-        <button type="button" id="full-screen">Full-Screen</button>
       </div>
     </div>
   </ion-content>
