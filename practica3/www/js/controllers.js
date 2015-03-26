@@ -80,9 +80,7 @@ angular.module('starter.controllers', [])
     }
 
     $scope.onTouch = function() {
-      console.log("Real Touch");
       $scope.active = !$scope.active;
-      console.log($scope.active);
     };
 
     // Video
@@ -93,11 +91,7 @@ angular.module('starter.controllers', [])
 
     // Sliders
     var seekBar = document.getElementById("seek-bar");
-    var container = document.getElementById("video-container")
-
-    container.addEventListener("click", function() {
-      console.log("Touch");
-    })
+    var container = document.getElementById("video-container");
 
 
     // Event listener for the play/pause button
